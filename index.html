@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>CHROMA AI | Home</title>
+  </head>
+
+  <body>
+    <img
+      id="logo"
+      class="animate__fadeInDown logo"
+      src="images/logo.svg"
+      alt="logo"
+      draggable="false"
+      onclick="window.location.href='index.html'"
+    />
+
+    <div id="menu" class="animate__fadeInDown">
+      <button
+        id="about"
+        class="btn"
+        onclick="window.location.href='about.html'"
+      >
+        About
+      </button>
+      <button id="contact" class="btn">Contact</button>
+
+      <div class="search">
+        <input type="text" class="search__input" placeholder="Search" />
+        <button class="search__button">
+          <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+            <g>
+              <path
+                d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+              ></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="container animate__fadeIn">
+      <div class="rectangle"></div>
+      <h1>CREATE A PERFECT PALLETE</h1>
+      <div class="background-wrapper">
+        <img
+          class="background"
+          src="images/home_explore_bg.svg"
+          alt="explore"
+        />
+        <img
+          class="background"
+          src="images/home_explore_bg.svg"
+          alt="explore"
+        />
+      </div>
+      <h2 id="button1"><a href="">MAKE A PALLETE</a></h2>
+      <h2 id="button2"><a href="">EXPLORE!</a></h2>
+
+      <img class="bg" id="bubble" src="images/bubble.svg" alt="bubbles" />
+      <img class="bg" id="star" src="images/star.svg" alt="star" />
+      <img class="bg" id="heart" src="images/heart.svg" alt="heart" />
+    </div>
+
+    <div class="item-container animate__fadeInUp">
+      <div class="square">
+        <div
+          id="one"
+          class="one"
+          onmouseover="showLabel('Label 4', event)"
+          onmouseout="hideLabel()"
+        ></div>
+        <span class="label" data-label="Label 4">#d0a2f7</span>
+
+        <div
+          id="two"
+          class="one"
+          onmouseover="showLabel('Label 3', event)"
+          onmouseout="hideLabel()"
+        ></div>
+        <span class="label" data-label="Label 3">#dcbfff</span>
+
+        <div
+          id="three"
+          class="one"
+          onmouseover="showLabel('Label 2', event)"
+          onmouseout="hideLabel()"
+        ></div>
+        <span class="label" data-label="Label 2">#e5d4ff</span>
+
+        <div
+          id="four"
+          class="one"
+          onmouseover="showLabel('Label 1', event)"
+          onmouseout="hideLabel()"
+        ></div>
+        <span class="label" data-label="Label 1">#d0a2f7</span>
+      </div>
+      <div class="square">
+        <div id="one" class="two"></div>
+        <div id="two" class="two"></div>
+        <div id="three" class="two"></div>
+        <div id="four" class="two"></div>
+      </div>
+      <div class="square">
+        <div id="one" class="three"></div>
+        <div id="two" class="three"></div>
+        <div id="three" class="three"></div>
+        <div id="four" class="three"></div>
+      </div>
+      <div class="square">
+        <div id="one" class="four"></div>
+        <div id="two" class="four"></div>
+        <div id="three" class="four"></div>
+        <div id="four" class="four"></div>
+      </div>
+      <div class="square">
+        <div id="one" class="five"></div>
+        <div id="two" class="five"></div>
+        <div id="three" class="five"></div>
+        <div id="four" class="five"></div>
+      </div>
+      <div class="square">
+        <div id="one" class="six"></div>
+        <div id="two" class="six"></div>
+        <div id="three" class="six"></div>
+        <div id="four" class="six"></div>
+      </div>
+      <div class="square">
+        <div id="one" class="seven"></div>
+        <div id="two" class="seven"></div>
+        <div id="three" class="seven"></div>
+        <div id="four" class="seven"></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
