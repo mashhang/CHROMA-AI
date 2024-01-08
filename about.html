@@ -8,8 +8,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="script" href="script.js" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/am-fadeshow@1.0.4/dist/am-fadeshow.min.js"></script>
     <title>CHROMA AI | About</title>
   </head>
 
@@ -32,7 +39,13 @@
       >
         About
       </button>
-      <button id="contact" class="btn">Contact</button>
+      <button
+        id="contact"
+        class="btn"
+        onclick="window.location.href='contact.html'"
+      >
+        Contact
+      </button>
 
       <div class="search">
         <input type="text" class="search__input" placeholder="Search" />
@@ -49,32 +62,50 @@
     </div>
 
     <div class="container">
-      <h1>Welcome to CHROMA AI!</h1>
-      <h2 class="title">What is CHROMA AI?</h2>
-      <h2 class="answer">
-        CHROMA AI is more than just a color picker; it's an expression of my
-        love for aesthetics and the world of design. I envisioned a tool that
-        not only helps you find the perfect color but also inspires creativity
-        and adds a splash of joy to your projects.
-      </h2>
+      <h2>Welcome to</h2>
+      <h1 class="title">CHROMA AI!</h1>
+      <div class="background-box"></div>
 
-      <h2 class="title2">Features at a Glance</h2>
-      <h2 class="answer2">
-        Intuitive Color Picking: Easily choose colors with a user-friendly
-        interface. Color Palette Exploration: Discover beautiful palettes to
-        enhance your designs. Hex, RGB, and HSL Values: Get the color codes you
-        need for seamless integration. Save and Share: Save your favorite colors
-        and share them with others.
-      </h2>
+      <!-- /* -------------------------------------------------------- */ -->
+      <div class="slideshow-container">
+        <div class="slide fade">
+          <h1>What is Chroma AI?</h1>
+          <p>
+            Chroma ai is more than just a color picker; it’s an expression of
+            love for aesthetics and the world of design. this tool doesn’t just
+            help you find the perfect color but also inspires creativity and
+            adds a splash of joy to your projects.
+          </p>
+        </div>
+        <div class="slide fade">
+          <h1>Features at a Glance</h1>
+          <p>
+            Intuitive Color Picking: Easily choose colors with a user-friendly
+            interface. Color Palette Exploration: Discover beautiful palettes to
+            enhance your designs. Hex, RGB, and HSL Values: Get the color codes
+            you need for seamless integration. Save and Share: Save your
+            favorite colors and share them with others.
+          </p>
+        </div>
+        <div class="slide fade">
+          <h1>Join Us on this Colorful Journey</h1>
+          <p>
+            We invite you to explore the world of colors with me. Whether you're
+            a designer, developer, or simply someone who appreciates the beauty
+            of a well-chosen hue, CHROMA AI is here to inspire and assist you.
+            Feel free to reach out, share your thoughts, and let me know how
+            CHROMA AI has brightened up your creative endeavors! Happy color
+            picking!
+          </p>
+        </div>
 
-      <h2 class="title3">Join Us on this Colorful Journey</h2>
-      <h2 class="answer3">
-        We invite you to explore the world of colors with me. Whether you're a
-        designer, developer, or simply someone who appreciates the beauty of a
-        well-chosen hue, CHROMA AI is here to inspire and assist you. Feel free
-        to reach out, share your thoughts, and let me know how CHROMA AI has
-        brightened up your creative endeavors! Happy color picking!
-      </h2>
+        <!-- <button class="prev" onclick="plusSlides(-1)">Previous</button> -->
+        <a href="#" class="prev round" onclick="plusSlides(-1)">&#8249;</a>
+        <!-- <button class="next" onclick="plusSlides(1)">Next</button> -->
+        <a href="#" class="next round" onclick="plusSlides(1)">&#8250;</a>
+      </div>
     </div>
+
+    <script src="about.js"></script>
   </body>
 </html>

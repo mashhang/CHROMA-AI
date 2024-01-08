@@ -1,0 +1,82 @@
+:root {
+  --color1: #252525;
+  --color2: #004364;
+  --color3: #a9e3e8;
+  --color4: #ffc661;
+  --color5: #eaad6a;
+}
+
+#color1,
+.hexagon1,
+.hexagon7,
+.hexagon9 {
+  background-color: var(--color1);
+}
+.cls-61,
+.cls-62,
+.t2-cls-1,
+.t2-cls-6 {
+  fill: var(--color1);
+}
+
+/* --------------------------------------------- */
+
+#color2,
+.hexagon2,
+.hexagon6 {
+  background-color: var(--color2);
+}
+.cls-1,
+.cls-3 {
+  stroke: var(--color2);
+}
+.cls-7,
+.t2-cls-2,
+.t2-cls-7 {
+  fill: var(--color2);
+}
+
+/* --------------------------------------------- */
+
+#color3,
+.hexagon3,
+.hexagon10 {
+  background-color: var(--color3);
+}
+.cls-2 {
+  stroke: var(--color3);
+}
+.t2-cls-3 {
+  fill: var(--color3);
+}
+
+/* --------------------------------------------- */
+
+#color4,
+.hexagon4,
+.hexagon5,
+.hexagon11 {
+  background-color: var(--color4);
+}
+.cls-9,
+.t2-cls-4 {
+  fill: var(--color4);
+}
+
+/* --------------------------------------------- */
+
+#color5,
+.hexagon8,
+.hexagon12 {
+  background-color: var(--color5);
+}
+.cls-41,
+.cls-42,
+.cls-51,
+.cls-52,
+.cls-53,
+.cls-54,
+.cls-8,
+.t2-cls-5 {
+  fill: var(--color5);
+}

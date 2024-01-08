@@ -1,0 +1,245 @@
+body {
+  font-family: Monospace;
+  background-color: #f6f2f0;
+}
+
+#menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3.5vh 5.5vw 1vw 1vw;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.logo {
+  width: 250px;
+  margin-left: 85px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.animate__fadeInDown {
+  animation-duration: 1s;
+}
+
+.animate__fadeIn {
+  animation-duration: 2s;
+}
+
+.animate__fadeInUp {
+  animation-duration: 1s;
+}
+/* ---------------------BUTTON MENU----------------------- */
+.btn {
+  font-size: 1.2vw;
+  background: transparent;
+  border: none;
+  padding: 0.8em 1.5em;
+  color: #424242;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.5s ease;
+  margin-right: -1vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 2rem;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #e7d1c9;
+  transition: 0.3s ease;
+}
+
+/* .btn:hover {
+      color: white;
+      transition-delay: .3s;
+  } */
+
+.btn:hover::before {
+  width: 30%;
+}
+
+/* .btn::after {
+    content: "";
+    position: absolute;
+    left: 2rem;
+    bottom: 0;
+    height: 0;
+    width: 30%;
+    background-color: #e7d1c9;
+    transition: 0.3s ease;
+    z-index: -1;
+  } */
+/* 
+  .btn:hover::after {
+      height: 100%;
+      transition-delay: 0.3s;
+      color: aliceblue;
+  } */
+
+.search {
+  display: flex;
+  align-items: center;
+  padding-left: 2vw;
+}
+.search__input {
+  font-family: inherit;
+  font-size: 1.2vw;
+  background-color: #faf8f8;
+  border: none;
+  color: #625f5f;
+  padding: 0.7rem 1rem;
+  border-radius: 30px;
+  width: 13em;
+  transition: all ease-in-out 0.5s;
+  margin-right: -2rem;
+}
+
+.search__input:hover,
+.search__input:focus {
+  box-shadow: 0 0 1em #0000003f;
+}
+
+.search__input:focus {
+  outline: none;
+  background-color: #f0eeee;
+}
+
+.search__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #625f5f;
+}
+
+.search__input:focus + .search__button {
+  background-color: #f0eeee;
+}
+
+.search__button {
+  border: none;
+  background-color: #faf8f8;
+  margin-top: 0.1em;
+}
+
+.search__button:hover {
+  cursor: pointer;
+}
+
+.search__icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: #625f5f;
+}
+
+/* -------------------------------------------------------- */
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+  text-align: center;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  text-align: center;
+  margin: -10px 632px 0px 632px;
+  color: #625f5f;
+}
+
+/* --------------------BUTTON------------------------------ */
+.categories {
+  display: inline-flex;
+  margin-left: 630px;
+}
+
+.category {
+  appearance: button;
+  background-color: #949494;
+  border: solid transparent;
+  border-radius: 10px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 130px 0 0 10px;
+  outline: none;
+  overflow: visible;
+  padding: 7px 15px;
+  text-align: center;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* .category:after {
+  background-clip: padding-box;
+  background-color: #625f5f;
+  border: solid transparent;
+  border-radius: 10px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+} */
+
+.category:main,
+.category:focus {
+  user-select: auto;
+}
+
+.category:hover:not(:disabled) {
+  filter: brightness(1.3);
+}
+
+.category:disabled {
+  cursor: auto;
+}
+
+.category:active:after {
+  border-width: 0 0 0px;
+}
+
+.category#all {
+  color: white;
+  background-color: #625f5f;
+}
+
+/* --------------------BOXES------------------------------ */
+.boxes {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.template-box {
+  width: 570px;
+  height: 420px;
+  margin: 20px;
+  border: 2px solid #000;
+  display: inline-block;
+}
+
+.space-bottom {
+  margin-bottom: 100px;
+}
